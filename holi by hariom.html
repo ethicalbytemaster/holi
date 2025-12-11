@@ -1,69 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HARIOM Happy Holi 2024</title>
-
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="holistyle.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HARIOM Happy Holi 2024 - Magical Unicorn Edition</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="holistyle.css">
+    <style>
+        .unicorn-decoration {
+            position: absolute;
+            font-size: 60px;
+            animation: float 6s ease-in-out infinite;
+            opacity: 0.8;
+        }
+        .unicorn-top-left {
+            top: 10px;
+            left: 20px;
+            animation-delay: 0s;
+        }
+        .unicorn-top-right {
+            top: 30px;
+            right: 40px;
+            animation-delay: 2s;
+        }
+        .unicorn-bottom-left {
+            bottom: 50px;
+            left: 30px;
+            animation-delay: 4s;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(20px); }
+        }
+        @keyframes sparkle {
+            0%, 100% { opacity: 0.4; }
+            50% { opacity: 1; }
+        }
+        .sparkle {
+            display: inline-block;
+            animation: sparkle 1.5s infinite;
+        }
+        .rainbow-text {
+            background: linear-gradient(90deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: gradient-shift 3s ease infinite;
+        }
+        @keyframes gradient-shift {
+            0%, 100% { filter: hue-rotate(0deg); }
+            50% { filter: hue-rotate(360deg); }
+        }
+        .unicorn-title {
+            font-size: 48px;
+            font-weight: bold;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 2px 2px 4px rgba(255, 192, 203, 0.5);
+        }
+    </style>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg fixed-top">
-      <div class="container">
-          <a class="navbar-brand text-white" href="#">
-           <div class="log">Happy Holi By HARIOM</div>
-          </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-   
-      <div class="collapse navbar-collapse" >
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="btn btn-light" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-           
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              More
+    <!-- Floating Unicorn Decorations -->
+    <div class="unicorn-decoration unicorn-top-left">🦄</div>
+    <div class="unicorn-decoration unicorn-top-right">✨</div>
+    <div class="unicorn-decoration unicorn-bottom-left">🦄</div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand text-white" href="#">
+                <div class="log"><span class="sparkle">🦄</span> Happy Holi By HARIOM <span class="sparkle">🦄</span></div>
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="btn btn-light" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            More
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Unicorn Magic</a>
+                            <a class="dropdown-item" href="#">Rainbow Colors</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Celebrate with Us</a>
+                        </div>
+                    </li>
+                </ul>
             </div>
-          </li>
-        
-      </div>
-      </div>
+        </div>
     </nav>
 
+    <!-- Main Content -->
     <div class="myinfo">
-      <h1 class="holi">Hey there!</h1>
-      <h1>i am HARIOM</h1>
-          <p>Wishing you and your loved ones a very colourful Holi<br>May you forget all your worries and enjoy this day to the fullest.<br> <h2 class="hue">Happy Holi!</h2></p>
+        <h1 class="holi"><span class="sparkle">✨</span> Hey there! <span class="sparkle">✨</span></h1>
+        <h1>I am HARIOM</h1>
+        <h2 class="unicorn-title">🦄 Magical Unicorn Holi Celebration 🦄</h2>
+        <p>
+            Wishing you and your loved ones a very colorful and magical Holi!<br>
+            May you forget all your worries and enjoy this day to the fullest.<br>
+            With unicorn magic and rainbow colors, let's celebrate together!<br>
+            <h2 class="hue">🌈 Happy Holi! 🌈</h2>
+        </p>
+        <a href="#" class="btn btn-danger mr-3 hue">✨ Contact ✨</a>
+        <a href="#" class="btn btn-light">🦄 Login 🦄</a>
+    </div>
 
-              <a href="#" class="btn btn-danger mr-3 hue">contact</a>
-              <a href="#" class="btn btn-light">Login</a>
-      </div>
+    <!-- Video Background -->
+    <video autoplay loop playsinline muted>
+        <source src="Happy Holi 2024 By CWS.mp4">
+        Video is not supported in your browser
+    </video>
 
-      <video autoplay loop play-inline muted  >
-          <source src="Happy Holi 2024 By CWS.mp4">
-              video is not load
-          </video>
-
-  
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2e50Y2D+p3fy+0of50c6r3b75eDaolJ53JFdlCohM00nhBBFnRrGfONAjKp" crossorigin="anonymous"></script>
 </body>
-
 </html>
-
-
